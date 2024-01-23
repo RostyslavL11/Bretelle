@@ -1,3 +1,13 @@
-$font_main: "Nunito Sans", sans-serif;
+:root {
+  --font-main: "Nunito Sans", sans-serif;
+  --font-second: "Roboto", sans-serif;
 
-$c-orange: #ff7352;
+  --main-color: #f6cac1;
+  --main-color-lite: #fff8f6;
+
+  --social-border-color: #ffded8;
+
+  --white-color: #ffffff;
+  --red-color: #e53935;
+  --gray-color: #9e9e9e;
+}

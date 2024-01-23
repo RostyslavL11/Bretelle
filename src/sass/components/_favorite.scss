@@ -1,0 +1,11 @@
+.favorite {
+  display: flex;
+  align-items: center;
+  &__link {
+    img {
+      display: block;
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+}

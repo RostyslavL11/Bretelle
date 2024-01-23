@@ -1,0 +1,39 @@
+.nav {
+  // padding: 8px 0 8px 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper {
+    background-color: var(--main-color);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__phone {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+}

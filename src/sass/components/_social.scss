@@ -1,0 +1,21 @@
+.social {
+  border-left: 1px solid var(--social-border-color);
+  border-right: 1px solid var(--social-border-color);
+  &__list {
+    padding: 0 16px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__link {
+    a {
+      img {
+        display: block;
+        max-width: 24px;
+        max-height: 24px;
+      }
+    }
+  }
+}
