@@ -1,34 +1,44 @@
 .dropdown {
   position: relative;
-  border: 1px solid black;
-
+  // border: 1px solid black;
   display: flex;
   align-items: center;
+  gap: 8px;
+  transition: all 0.5s ease-in-out;
 
-  transition: all 1s ease-in-out;
-
-  &:hover {
-    .dropdown__menu {
-      display: block;
-    }
-    .dropdown__btn {
-      img {
-        transform: rotate(90deg);
-      }
-    }
+  &__arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid var(--menu-color-hover);
+    transition: all 0.3s ease-in-out;
   }
 
   &__menu {
     width: 150px;
-    padding: 4px 0 16px 0;
-    display: none;
+    // padding: 4px 0 16px 0;
+    // display: none;
+    height: 0;
+    overflow: hidden;
     background-color: navajowhite;
-    border: 1px solid red;
+    // border: 1px solid red;
     position: absolute;
     left: 0;
     top: 25px;
     border-radius: 4px;
     box-shadow: 0px 1px 10px 0px rgba(203, 203, 203, 0.25);
+    transition: height 0.5s ease-out;
+  }
+
+  &:hover {
+    .dropdown__menu {
+      // display: block;
+      height: 300px; /* Максимальна висота, яку ви хочете встановити */
+    }
+    .dropdown__arrow {
+      transform: rotate(-90deg);
+    }
   }
 
   &__link {
@@ -46,19 +56,6 @@
     &:hover {
       color: var(--black-color);
       background-color: var(--dropdown-background-color);
-    }
-  }
-
-  &__btn {
-    appearance: none;
-    border: none;
-    background: none; /* Додайте цей рядок, якщо ви хочете прибрати фон кнопки */
-    padding: 0; /* Прибрати відступи */
-    cursor: pointer;
-
-    img {
-      max-width: 24px;
-      vertical-align: middle;
     }
   }
 }
