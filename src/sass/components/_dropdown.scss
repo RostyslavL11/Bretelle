@@ -14,15 +14,9 @@
     transition: all 0.3s ease-in-out;
   }
 
-  // &:hover {
-  //   .dropdown__arrow {
-  //     transform: rotate(-90deg);
-  //   }
-  // }
-
   &__menu {
     width: 150px;
-    padding: 4px 0 16px 0;
+    padding: 12px 0 12px 0;
     position: absolute;
     left: 0;
     top: calc(100%);
@@ -35,7 +29,7 @@
   }
 
   &__link {
-    padding: 0px 16px 0 16px;
+    padding: 4px 16px 4px 16px;
     margin-bottom: 14px;
     color: var(--gray-color);
     font-size: 16px;
