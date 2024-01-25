@@ -1,6 +1,5 @@
 .dropdown {
   position: relative;
-  // border: 1px solid black;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -15,30 +14,24 @@
     transition: all 0.3s ease-in-out;
   }
 
+  // &:hover {
+  //   .dropdown__arrow {
+  //     transform: rotate(-90deg);
+  //   }
+  // }
+
   &__menu {
     width: 150px;
-    // padding: 4px 0 16px 0;
-    // display: none;
-    height: 0;
-    overflow: hidden;
-    background-color: navajowhite;
-    // border: 1px solid red;
+    padding: 4px 0 16px 0;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: calc(100%);
     border-radius: 4px;
     box-shadow: 0px 1px 10px 0px rgba(203, 203, 203, 0.25);
-    transition: height 0.5s ease-out;
-  }
-
-  &:hover {
-    .dropdown__menu {
-      // display: block;
-      height: 300px; /* Максимальна висота, яку ви хочете встановити */
-    }
-    .dropdown__arrow {
-      transform: rotate(-90deg);
-    }
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-out;
   }
 
   &__link {
@@ -57,5 +50,20 @@
       color: var(--black-color);
       background-color: var(--dropdown-background-color);
     }
+  }
+
+  &__btn {
+    background-color: transparent;
+  }
+}
+
+.dropdown__active {
+  .dropdown__menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .dropdown__arrow {
+    transform: rotate(-90deg);
   }
 }
