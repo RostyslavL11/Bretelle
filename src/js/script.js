@@ -51,6 +51,8 @@ const swiper = new Swiper('.swiper', {
 
 	// Navigation arrows
 	navigation: {
+		// nextEl: '.swiper-promo-next',
+		// prevEl: '.swiper-promo-prev',
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
