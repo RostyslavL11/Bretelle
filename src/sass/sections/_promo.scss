@@ -1,0 +1,35 @@
+.swiper {
+  &-slide {
+    img {
+      width: 100%;
+      height: calc(100vh - 120px);
+      object-fit: cover;
+    }
+  }
+  &-button {
+    &-prev {
+      left: 50px;
+    }
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: ""; /* Вимкнути вміст за замовчуванням (стрілочки Swiper) */
+
+  background-size: contain; /* Розмір зображення, наприклад, contain або cover */
+  width: 20px; /* Ширина зображення стрілки */
+  height: 20px; /* Висота зображення стрілки */
+}
+
+.swiper-button-prev::after {
+  background-image: url("../icons/promo_arrows/promo-arrow-prev.svg");
+}
+// .swiper-button-next::after {
+//   // content: none; /* вимкнути вміст стрілок за замовчуванням */
+// }
+
+.swiper-button-prev {
+  width: 100px;
+  height: 100px;
+}
