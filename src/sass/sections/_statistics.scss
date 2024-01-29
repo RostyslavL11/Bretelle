@@ -1,6 +1,6 @@
 .statistics {
   margin-top: 130px;
-  margin-bottom: 130px;
+  margin-bottom: 105px;
 
   &__wrapper {
     display: flex;
@@ -12,7 +12,7 @@
     position: relative;
     padding: 32px 40px 40px 40px;
     width: 360px;
-    height: 208px;
+    min-height: 208px;
     box-shadow: 0px 1px 18px 0px rgba(192, 192, 192, 0.25);
     border-radius: 8px;
   }
@@ -44,6 +44,7 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 56.5px;
+    max-width: 75%;
   }
 
   &__descr {

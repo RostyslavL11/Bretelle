@@ -1,0 +1,16 @@
+.catalog {
+  margin-bottom: 200px;
+
+  &__slide {
+    max-width: 135px;
+    height: 128px;
+
+    &-link {
+      display: block;
+    }
+  }
+  .catalog__slide-img {
+    width: 100%;
+    height: 90px;
+  }
+}
