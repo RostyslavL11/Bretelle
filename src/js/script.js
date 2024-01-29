@@ -60,5 +60,10 @@ const swiper = new Swiper('.swiper', {
 	// And if we need scrollbar
 	scrollbar: {
 		el: '.swiper-scrollbar',
-	},
+	}
+
+	// autoplay: {
+	// 	delay: 5000, // Затримка між автоматичними змінами слайдів у мілісекундах
+	// 	disableOnInteraction: true, // Заборона автозміни слайду при взаємодії користувача (клік, свайп і т.д.)
+	// }
 });
