@@ -1,47 +1,73 @@
+.promo {
+  position: relative;
+  &__info {
+    top: 30%;
+    left: 50%;
+    z-index: 10;
+    position: absolute;
+    max-width: 560px;
+    text-align: center;
+  }
+  &__descr {
+    margin-top: 16px;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
 .swiper {
   position: relative;
   &-slide {
     img {
       width: 100%;
-      height: calc(100vh - 120px);
+      height: calc(100vh - 112px);
       object-fit: cover;
     }
   }
   &-promo {
     &-prev {
-      left: 50px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 52px;
+      width: 40px;
+      height: 40px;
+      z-index: 10;
+      background-image: url("../icons/promo_arrows/promo-arrow-prev.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
     &-next {
-      right: 50px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 52px;
+      width: 40px;
+      height: 40px;
+      z-index: 10;
+      background-image: url("../icons/promo_arrows/promo-arrow-next.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
-}
 
-.swiper-promo-prev {
-  // position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // left: 52px;
-  // width: 100px;
-  // height: 100px;
-  border: 1px solid red;
-  // z-index: 10;
-}
-.swiper-promo-next {
-  // width: 100px;
-  // height: 100px;
-  border: 1px solid red;
-}
+  &-pagination {
+    margin-bottom: 40px;
 
-.swiper-promo-prev::after,
-.swiper-promo-next::after {
-  content: "";
+    &-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: var(--swiper-bulet-color);
 
-  // background-size: contain;
-  // width: 20px;
-  // height: 20px;
-}
+      &-active {
+        background-color: var(--swiper-bulet-active);
+      }
 
-.swiper-promo-prev::after {
-  background-image: url("../icons/promo_arrows/promo-arrow-prev.svg");
+      &:hover {
+        background-color: var(--swiper-bulet-hover);
+      }
+    }
+  }
 }

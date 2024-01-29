@@ -1,0 +1,12 @@
+.btn {
+  &__promo {
+    margin-top: 30px;
+    width: 298.62px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    a {
+      color: var(--white-color);
+    }
+  }
+}

@@ -47,14 +47,14 @@ const swiper = new Swiper('.swiper', {
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true // Дозволяє взаємодію з пагінацією
+
 	},
 
 	// Navigation arrows
 	navigation: {
-		// nextEl: '.swiper-promo-next',
-		// prevEl: '.swiper-promo-prev',
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-promo-next',
+		prevEl: '.swiper-promo-prev',
 	},
 
 	// And if we need scrollbar
