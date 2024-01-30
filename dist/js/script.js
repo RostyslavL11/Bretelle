@@ -39,7 +39,7 @@ document.addEventListener('click', e => {
 
 
 // swiper
-const swiper = new Swiper('.swiper', {
+const swiperPromo = new Swiper('#swiper-promo', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
@@ -55,15 +55,27 @@ const swiper = new Swiper('.swiper', {
 	navigation: {
 		nextEl: '.swiper-promo-next',
 		prevEl: '.swiper-promo-prev',
-	},
-
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
 	}
 
 	// autoplay: {
 	// 	delay: 5000, // Затримка між автоматичними змінами слайдів у мілісекундах
 	// 	disableOnInteraction: true, // Заборона автозміни слайду при взаємодії користувача (клік, свайп і т.д.)
 	// }
+});
+
+const swiperCatalog = new Swiper('#swiper-catalog', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	slidesPerView: 7,
+
+	spaceBetween: 30,
+
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.catalog__button-next',
+		prevEl: '.catalog__button-prev',
+	},
+
 });
