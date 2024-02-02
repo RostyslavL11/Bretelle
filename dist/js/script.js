@@ -69,7 +69,7 @@ const swiperCatalog = new Swiper('#swiper-catalog', {
 	loop: true,
 	slidesPerView: 7,
 
-	spaceBetween: 0,
+	spaceBetween: 30,
 
 
 	// Navigation arrows
