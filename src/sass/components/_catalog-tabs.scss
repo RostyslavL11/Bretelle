@@ -1,0 +1,36 @@
+.catalog {
+  &__tabs {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-list {
+      display: flex;
+      justify-content: start;
+      gap: 30px;
+    }
+  }
+
+  &__tab {
+    &-btn {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray-color);
+      line-height: 24px;
+
+      &:hover {
+        color: var(--tab-active-color);
+      }
+    }
+  }
+  &__custom {
+    display: flex;
+    gap: 24px;
+    &-item {
+      padding: 8px 12px;
+      display: inline-block;
+      border: 1px solid rgb(240, 240, 240);
+      border-radius: 4px;
+    }
+  }
+}
