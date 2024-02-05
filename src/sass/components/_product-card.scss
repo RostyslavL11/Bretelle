@@ -1,0 +1,17 @@
+.product-card {
+  &__item {
+    border: 1px solid black;
+    width: 262px;
+    height: 376px;
+  }
+
+  &__slider {
+    height: 208px;
+  }
+
+  &__pagination {
+    .swiper-pagination {
+      margin-bottom: 10px;
+    }
+  }
+}

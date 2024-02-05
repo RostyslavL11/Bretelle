@@ -1,0 +1,23 @@
+.product-card {
+  &__dots {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    z-index: 100;
+    &_dot {
+      transition: all 0.3s ease-in-out;
+      min-width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--swiper-bulet-color);
+      &-active {
+        background-color: var(--swiper-bulet-active);
+      }
+      &:hover {
+        background-color: var(--swiper-bulet-hover);
+      }
+    }
+  }
+}

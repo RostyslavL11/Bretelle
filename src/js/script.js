@@ -79,3 +79,20 @@ const swiperCatalog = new Swiper('#swiper-catalog', {
 	},
 
 });
+
+const swiperProductCard = new Swiper('#swiper-product-card', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.product-card__dots',
+		bulletActiveClass: 'product-card__dots_dot-active',
+		bulletClass: 'product-card__dots_dot',
+		clickable: true
+
+	}
+
+
+});
