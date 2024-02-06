@@ -13,3 +13,19 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+//reset  for swiper bullets container
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-container-horizontal .swiper-slide img {
+  border-radius: 0;
+}
+
+.swiper-container-horizontal .swiper-wrapper {
+  border-radius: 0;
+}
