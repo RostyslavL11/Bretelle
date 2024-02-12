@@ -1,9 +1,4 @@
 .product-card {
-  &:hover {
-    .product-card__additional {
-      display: block;
-    }
-  }
   &__wrapper {
     margin-top: 30px;
     display: grid;
@@ -13,11 +8,25 @@
   }
 
   &__item {
+    z-index: 10;
     background-color: var(--white-color);
     width: 262px;
-    // height: 376px;
+    height: 376px;
     border-radius: 8px;
     box-shadow: 0px 1px 10px 0px rgba(203, 203, 203, 0.25);
+
+    &:hover {
+      z-index: 100;
+      .product-card__additional {
+        visibility: visible;
+        opacity: 1;
+        z-index: 100;
+      }
+
+      .product-card__footer {
+        padding: 8px 16px 24px 16px;
+      }
+    }
   }
 
   &__slider-wrapper {
@@ -140,13 +149,24 @@
   }
 
   &__additional {
+    padding: 0px 16px 32px 16px;
+    visibility: hidden;
+    opacity: 0;
     // border: $border;
-    padding: 0 16px;
-    display: none;
+    border-radius: 0 0 8px 8px;
+
+    box-shadow: 0px 4px 4px -2px rgba(203, 203, 203, 0.25);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white-color);
+    visibility: hidden;
+    opacity: 0;
+    // visibility: visible;
+
+    // opacity: 1;
   }
 
   &__additional-title {
-    margin-top: 6px;
+    margin-top: 16px;
     color: var(--gray-color);
     text-align: left;
     font-size: 14px;
@@ -156,11 +176,31 @@
 
   &__additional-wrapper {
     margin-top: 16px;
-    // border: $border;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     width: 100%;
+    &_color {
+      :nth-child(1) {
+        border-color: rgb(240, 240, 240);
+        background-color: #d9dfea;
+      }
+      :nth-child(2) {
+        border-color: rgb(246, 202, 193);
+
+        background-color: #ffe7eb;
+      }
+      :nth-child(3) {
+        border-color: rgb(228, 228, 228);
+
+        background-color: #bfd3de;
+      }
+      :nth-child(4) {
+        border-color: rgb(240, 240, 240);
+
+        background-color: #292c39;
+      }
+    }
   }
 
   &__size-btn {
@@ -186,5 +226,12 @@
     height: 32px;
     border-radius: 50%;
     background-color: var(--product-color-bg);
+  }
+
+  &__descr {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
   }
 }

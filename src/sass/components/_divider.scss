@@ -7,6 +7,10 @@
 
   &__product-card {
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 16px 0 16px 0;
+
+    &_top {
+      margin: -6px 0 0 0;
+    }
   }
 }
